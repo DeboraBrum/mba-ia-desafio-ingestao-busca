@@ -2,7 +2,7 @@ from search import semantic_search, PROMPT_TEMPLATE, format_docs
 from langchain_google_genai import GoogleGenerativeAI
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from config import GOOGLE_API_KEY, GOOGLE_MODEL, K_RESULTS
-from langchain.output_parsers import StrOutputParser
+from langchain_core.output_parsers import StrOutputParser
 from langchain.prompts import PromptTemplate
 
 def get_model_llm():
